@@ -66,3 +66,26 @@ body{
     width: 50%;
     margin: -15% 0 0 -25%;
 }
+.answer-section
+{
+  text-align:center;
+  height:30px;
+  font-size:25px;
+  padding-top:15px;
+}
+.answer
+{
+  display:inline-block;
+  width:300px;
+  text-align:center;
+  border: 3px solid #3B5C98;
+  margin: auto;
+}
+.answer:hover
+{
+  background-color:#F00;
+}
+.answer:active
+{
+  background-color:#FF0;
+}
