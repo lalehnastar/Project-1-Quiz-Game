@@ -10,3 +10,36 @@ body{
     text-align:center;
   }
   
+  .hidden{
+    display:none;
+}
+.player-scores
+{
+    color:white;
+  margin:auto;
+  text-align:center;
+}
+.player-box
+{
+  display:inline-block;
+  width:300px;
+  height:100px;
+  background-color:#072356;
+  border: 3px solid #3B5C98;
+  font-size:25px;
+}
+.player-box-active
+{
+    border-color: #FFF;
+}
+.player-box > header
+{
+  color:#3B5C98;
+  display:inline-block;
+}
+.player-info
+{
+    display:inline-block;
+    vertical-align: top;
+
+}
