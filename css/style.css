@@ -6,7 +6,24 @@ body{
   }
   /* Style for header
 */
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
   header{
+    animation: blink 1s;
+    animation-iteration-count: infinite;
     color: white;
     font-family: fantasy;
     text-align:center;
