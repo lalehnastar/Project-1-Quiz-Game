@@ -1,3 +1,8 @@
+// THEEEEEEE PPRRROOOJJJEECCTTT11111111111111111111111
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//readme 
+// Green the right question 
+
 var game = {
   players: [{ name: 'Nicola Tesla', score: 0 }, { name: 'Albert Einstein', score: 0 }],
   currentPlayer: null,
@@ -84,6 +89,7 @@ var game = {
     this.players[1].score = 0,
       $('.score').text("0");
   },
+
   changeQuestion: function (index) {
     //Pull Question by Index
     var currentQuestion = this.questions[index];
@@ -171,12 +177,16 @@ var game = {
       return this.players[0];
   }
 };
+
+game.init();
+
 //Setup Event Listeners
 
 //Reset game when clicked.
 $("#resetButton").click(function () {
   game.init();
 });
+
 $(".answer").click(clickedAnswer); //Call clickedAnswer function when element with class name answer is clicked.
 
 function clickedAnswer() {
@@ -246,6 +256,7 @@ function clickedAnswer() {
     }
   }
 };
+
 function setWinnerTo(player) {
   $("#applause")[0].play();
   $('body').html('');
@@ -253,7 +264,6 @@ function setWinnerTo(player) {
 
   alert("The winner is " + player.name + "!!!");
 }
-
 
 
 
