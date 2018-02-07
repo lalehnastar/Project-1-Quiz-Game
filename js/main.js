@@ -171,6 +171,13 @@ var game = {
       return this.players[0];
   }
 };
+//Setup Event Listeners
+
+//Reset game when clicked.
+$("#resetButton").click(function () {
+  game.init();
+});
+
 
 
 
