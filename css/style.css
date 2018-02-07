@@ -1,94 +1,79 @@
-/* Style for body
-*/
-
+/* Style for body */
 body{
     background-color:#148377;
-  }
-  /* Style for header
-*/
-
+}
+/* Style for header */
 @keyframes blink {
     0% {
         opacity: 1;
-    }
+   }
     49% {
         opacity: 1;
-    }
+   }
     70% {
         opacity: 0.5;
-    }
+   }
     100% {
         opacity: 0.5;
-    }
+   }
 }
-  header{
+header{
     animation: blink 1s;
     animation-iteration-count: infinite;
     color: white;
     font-family: fantasy;
     text-align:center;
-  }
-  
-  .hidden{
+}
+.hidden{
     display:none;
 }
-/* Style for Players
-*/
-.player-scores
-{
+/* Style for Players */
+.player-scores {
     color:white;
-  margin:auto;
-  text-align:center;
+    margin:auto;
+    text-align:center;
 }
-.player-box
-{
-  display:inline-block;
-  width:300px;
-  height:100px;
-  background-color:#072356;
-  border: 3px solid #3B5C98;
-  font-size:25px;
+.player-box {
+    display:inline-block;
+    width:300px;
+    height:100px;
+    background-color:#072356;
+    border: 3px solid #3B5C98;
+    font-size:25px;
 }
-.player-box-active
-{
+.player-box-active {
     border-color: #FFF;
 }
-.player-box > header
-{
-  color:#3B5C98;
-  display:inline-block;
+.player-box > header {
+    color:#3B5C98;
+    display:inline-block;
 }
-.player-info
-{
+.player-info {
     display:inline-block;
     vertical-align: top;
-
 }
- 
-/* Style for Question-section
-*/
-
+/* Style for Question-section */
 @keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
+    from {
+       background-color: red;
+   }
+    to {
+       background-color: yellow;
+   }
 }
-.question-section
-{
-  position:relative;
-  font-size:30px;
-  color:black;
-  margin:10px auto;
-  text-align:center;
-  width:700px;
-  height:300px;
-  background-color: lightblue;
-        animation-name: example;
-        animation-duration: 4s;
+.question-section {
+    position:relative;
+    font-size:30px;
+    color:black;
+    margin:10px auto;
+    text-align:center;
+    width:700px;
+    height:300px;
+    background-color: lightblue;
+    animation-name: example;
+    animation-duration: 4s;
 }
-
-
-.question-section > .question
-{
+.question-section > .question {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -96,59 +81,47 @@ body{
     width: 50%;
     margin: -15% 0 0 -25%;
 }
-
-
-/* Style for Answer-section
-*/
-.answer-section
-{
-  text-align:center;
-  height:30px;
-  font-size:25px;
-  padding-top:15px;
+/* Style for Answer-section */
+.answer-section {
+    text-align:center;
+    height:30px;
+    font-size:25px;
+    padding-top:15px;
 }
-.answer
-{
-  display:inline-block;
-  width:300px;
-  text-align:center;
-  border: 3px solid #3B5C98;
-  margin: auto;
+.answer {
+    display:inline-block;
+    width:300px;
+    text-align:center;
+    border: 3px solid #3B5C98;
+    margin: auto;
 }
-.answer:hover
-{
-  background-color: Green;
+.answer:hover {
+    background-color: Green;
 }
-.answer:active
-{
-  background-color:#FF0;
+.answer:active {
+    background-color:#FF0;
 }
-/* Style for Images
-*/
-
-
-
+/* Style for Images */
 @keyframes blink {
     0% {
         opacity: 1;
-    }
+   }
     49% {
         opacity: 1;
-    }
+   }
     70% {
         opacity: 0.7;
-    }
+   }
     100% {
         opacity: 0.7;
-    }
+   }
 }
-    img {
-        animation: blink 1s;
-        animation-iteration-count: infinite;
-        width: 150px;
-        height: 100px;
-    }
-
-    
-  
-    
+img {
+    animation: blink 1s;
+    animation-iteration-count: infinite;
+    width: 150px;
+    height: 100px;
+}
+.playerButton:hover {
+    background-color: white;
+}
