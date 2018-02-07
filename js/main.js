@@ -110,6 +110,30 @@ var game = {
     //Set question to last one.
     this.changeQuestion(this.questions.length - 1);
   },
+  switchPlayer: function () {
+    // Toggle Player
+    if (this.currentPlayer === this.players[0]) {
+      this.currentPlayer = this.players[1];
+
+      $("#player1-box").removeClass("player-box-active");
+      $("#player2-box").addClass("player-box-active");
+    } else {
+      this.currentPlayer = this.players[0];
+
+      $("#player2-box").removeClass("player-box-active");
+      $("#player1-box").addClass("player-box-active");
+    }
+  },
+
+
+
+
+
+
+
+
+
+
 
 
 
