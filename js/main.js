@@ -163,7 +163,14 @@ var game = {
 
     else false;
   },
-  
+  getScoreLeader: function () {
+    //Who is winning the game?
+    if (this.players[0].score < this.players[1].score)
+      return this.players[1];
+    else
+      return this.players[0];
+  }
+};
 
 
 
