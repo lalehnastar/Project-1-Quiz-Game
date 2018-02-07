@@ -138,6 +138,16 @@ var game = {
   awardPoints: function () {
     this.currentPlayer.score += 100;
   },
+  // ask if end of game or not
+  isEndOfStandardQuestions: function () {
+    var totalStandardQuestions = this.questions.length - 2;
+    if (this.currentQuestionIndex >= totalStandardQuestions) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  },
 
 
 
