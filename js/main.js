@@ -246,6 +246,13 @@ function clickedAnswer() {
     }
   }
 };
+function setWinnerTo(player) {
+  $("#applause")[0].play();
+  $('body').html('');
+  $('body').css('background', 'url(images/confetti.gif)');
+
+  alert("The winner is " + player.name + "!!!");
+}
 
 
 
