@@ -157,7 +157,13 @@ var game = {
       return false;
     }
   },
+  isTieGame: function () {
+    if (this.players[0].score === this.players[1].score)
+      return true;
 
+    else false;
+  },
+  
 
 
 
