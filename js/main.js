@@ -67,3 +67,20 @@ var game = {
       ]
     }
   ],
+  init: function () {
+    //Reset Question Index
+    this.currentQuestionIndex = 0;
+
+    //Start with Player 1
+    $("#player2-box").removeClass("player-box-active");
+    $("#player1-box").addClass("player-box-active");
+    this.currentPlayer = this.players[0];
+
+    //Reset to Question #1.
+    this.changeQuestion(this.currentQuestionIndex);
+
+    //Set Scores to 0
+    this.players[0].score = 0;
+    this.players[1].score = 0,
+      $('.score').text("0");
+  },
