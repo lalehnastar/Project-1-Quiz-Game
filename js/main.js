@@ -124,6 +124,17 @@ var game = {
       $("#player1-box").addClass("player-box-active");
     }
   },
+  isCorrectAnswer: function (answer) {
+    var currentQuestion = this.questions[this.currentQuestionIndex];
+    for (var i = 0; i < currentQuestion.answers.length; i++) {
+      //Loop through answer array to find correct answer.  Once found, compare against answer parameter.
+      var questionAnswer = currentQuestion.answers[i];
+      if (questionAnswer.correct === true && questionAnswer.value === answer)
+        return true;
+    }
+
+    return false;
+  },
 
 
 
