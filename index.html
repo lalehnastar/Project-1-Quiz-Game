@@ -1,69 +1,69 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Who want's to be a millionaire?</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">.
-  <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="js/jquery-3.3.1.js"></script>
 </head>
+
 <body>
   <header>
-      <!-- Header-->
+    <!-- Header-->
     <h1>Who wants to be a millionare?</h1>
   </header>
   <main>
-      <!-- Player1-section-->
-        <section class="player-scores">
-          <div id="player1-box" class="player-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/N.Tesla.JPG">
-                <section class="player-info">
-                    <header>Player 1</header>
-                    <div id="player-1-score" class="score"></div>
-                </section>
-          </div>
-
-
-<!-- Player2-section-->
-          <div id="player2-box" class="player-box">
-                <img src="https://images.gr-assets.com/authors/1429114964p5/9810.jpg">
-                <section class="player-info">
-                    <header>Player 2</header>
-                    <div id="player-2-score" class="score"></div>
-                </section>
-          </div>
+    <!-- Player1-section-->
+    <section class="player-scores">
+      <div id="player1-box" class="player-box">
+        <img src="images/tesla.jpg">
+        <section class="player-info">
+          <header>Player 1</header>
+          <div id="player-1-score" class="score"></div>
         </section>
-<!-- Question-section-->
-        <section class="question-section">
-                <div class="question"></div>
-            </section>
-<!-- Answer-section-->
-<section class="answer-section answer-section-row-1">
-            <section class="answer answer-1">
-                    <span class="letter">A.</span>
-                    <span class="value"></span>
-                  </section>
-                  <section class="answer answer-2">
-                    <span class="letter">B.</span>
-                    <span class="value"></span>
-                  </section>
-                </section>
-                <section class="answer-section answer-section-row-2">
-                  <section class="answer answer-3">
-                    <span class="letter">C.</span>
-                    <span class="value"></span>
-                  </section>
-                  <section class="answer answer-4">
-                    <span class="letter">D.</span>
-                    <span class="value"></span>
-                  </section>
-                </section>
-      </main>
-      <audio id="applause" src="http://www.pacdv.com/sounds/applause-sounds/app-5.mp3"></audio>
-      <audio id="sadtrabone" src="https://www.myinstants.com/media/sounds/sadtrombone.swf.mp3"></audio>
-      <script src="js/main.js"></script>
-    </body>
-    </html>
+      </div>
+      <!-- Player2-section-->
+      <div id="player2-box" class="player-box">
+        <img src="images/einstein.jpg">
+        <section class="player-info">
+          <header>Player 2</header>
+          <div id="player-2-score" class="score"></div>
+        </section>
+      </div>
+    </section>
+    <!-- Question-section-->
+    <section class="question-section">
+      <div class="question"></div>
+      <!-- Reset Button -->
+      <Button id="resetButton">Reset</Button>
+      <!-- Reset Button -->
+    </section>
+    <!-- Answer-section-->
+    <section class="answer-section answer-section-row-1">
+      <section class="answer answer-1">
+        <span class="letter">A.</span>
+        <span class="value"></span>
+      </section>
+      <section class="answer answer-2">
+        <span class="letter">B.</span>
+        <span class="value"></span>
+      </section>
+    </section>
+    <section class="answer-section answer-section-row-2">
+      <section class="answer answer-3">
+        <span class="letter">C.</span>
+        <span class="value"></span>
+      </section>
+      <section class="answer answer-4">
+        <span class="letter">D.</span>
+        <span class="value"></span>
+      </section>
+    </section>
+  </main>
+  <audio id="applause" src="audio/applause.mp3"></audio>
+  <audio id="sadtrabone" src="audio/sadtrombone.mp3"></audio>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
