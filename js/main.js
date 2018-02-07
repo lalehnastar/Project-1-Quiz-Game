@@ -84,3 +84,44 @@ var game = {
     this.players[1].score = 0,
       $('.score').text("0");
   },
+  changeQuestion: function (index) {
+    //Pull Question by Index
+    var currentQuestion = this.questions[index];
+    console.log(currentQuestion)
+
+    this.currentQuestionIndex = index;
+
+    $(".question").fadeTo("slow", 0, function () {
+      //Loop through answers and setup A-D 
+      for (var i = 0; i < currentQuestion.answers.length; i++) {
+        var currentAnswer = currentQuestion.answers[i];
+        var selector = ".answer-" + (i + 1);
+
+        //Set Text of Div to the answer   css selector
+        var selectorValue = selector + " > .value";
+        $(selectorValue).text(currentAnswer.value);
+      }
+      //Set Question Div to currentQuestion
+      $(this).text(currentQuestion.question)
+        .fadeTo("slow", 1);
+    });
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
