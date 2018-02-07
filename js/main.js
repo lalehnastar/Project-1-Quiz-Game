@@ -148,6 +148,15 @@ var game = {
       return false;
     }
   },
+  isEndOfTiebreaker: function () {
+    var totalStandardQuestions = this.questions.length - 1;
+    if (this.currentQuestionIndex === totalStandardQuestions) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  },
 
 
 
