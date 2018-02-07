@@ -135,6 +135,19 @@ var game = {
 
     return false;
   },
+  awardPoints: function () {
+    this.currentPlayer.score += 100;
+  },
+
+
+
+
+
+
+
+
+
+
 
 
 
