@@ -179,6 +179,73 @@ $("#resetButton").click(function () {
 });
 $(".answer").click(clickedAnswer); //Call clickedAnswer function when element with class name answer is clicked.
 
+function clickedAnswer() {
+  var $answer = $(this);
+  //Check to see if the user selected the correct answer.
+  var answerText = $answer.find(".value").text();
+
+  if (game.isCorrectAnswer(answerText)) {
+    //If so, award points to user.
+    game.awardPoints();
+
+    $("#applause")[0].play();
+
+    //Identify score HTML element for current player
+    var playerScoreSelector = "#player-1-score";
+    if (game.currentPlayer == game.players[1]) {
+      playerScoreSelector = "#player-2-score"
+    }
+
+    //Fade score by 30%, update score, and check to see whether to move to the next question or end the game.
+    $(playerScoreSelector).fadeTo("slow", .3, function () {
+      $(this).text(game.currentPlayer.score).fadeTo("slow", 1);
+
+      // If correct answer and game is not over, switch players and ask next question.
+      if (!game.isEndOfStandardQuestions()) {
+        game.switchPlayer();
+        game.changeQuestion(game.currentQuestionIndex + 1);
+      }
+      else {
+        if (game.isTieGame()) {
+          setupTieBreaker();
+        }
+        else {
+          var winner = game.getScoreLeader();
+          setWinnerTo(winner);
+        }
+      }
+    });
+  }
+  else {
+    $("#sadtrabone")[0].play();
+
+    // If incorrect answer and game is not over, switch players and ask next question.
+    if (!game.isEndOfStandardQuestions()) {
+      game.switchPlayer();
+      game.changeQuestion(game.currentQuestionIndex + 1);
+    }
+    else {
+
+      if (!game.isEndOfTiebreaker()) {
+        //If tie game, ask Tie breaker question.
+        if (game.isTieGame()) {
+          setupTieBreaker();
+        }
+        else {
+          var winner = game.getScoreLeader();
+          setWinnerTo(winner);
+        }
+      }
+      else {
+        //Current Player got the wrong answer during the tie breaker.  This player lost so switch and annouce the winner.
+        game.switchPlayer()
+
+        var winner = game.currentPlayer;
+        setWinnerTo(winner);
+      }
+    }
+  }
+};
 
 
 
