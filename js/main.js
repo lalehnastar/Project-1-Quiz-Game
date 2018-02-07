@@ -106,6 +106,10 @@ var game = {
         .fadeTo("slow", 1);
     });
   },
+  changeQuestionToTieBreaker: function () {
+    //Set question to last one.
+    this.changeQuestion(this.questions.length - 1);
+  },
 
 
 
