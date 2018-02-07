@@ -177,7 +177,7 @@ var game = {
 $("#resetButton").click(function () {
   game.init();
 });
-
+$(".answer").click(clickedAnswer); //Call clickedAnswer function when element with class name answer is clicked.
 
 
 
