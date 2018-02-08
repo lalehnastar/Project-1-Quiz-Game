@@ -265,7 +265,7 @@ function setWinnerTo(player) {
   alert("The winner is " + player.name + "!!!");
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function setupTieBreaker() {
   //Disable event handler for answer click until L or N is pressed. you can not click answers.
   $(".answer").off("click");
