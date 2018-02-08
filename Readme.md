@@ -46,7 +46,20 @@ Wait 5 seconds then display the tieBreaker question (setTimeout)
 Time to press the keys  
 Press first---> answer first  
 Answer correct--> win the Game  
-Answer incorrect--> lose the Game
+Answer incorrect--> lose the Game  
+
+![alt text](images/tieBreaker-screenshot.png)
+
+
+
+
+Animation:  
+---  
+![alt text](images/fadeTo-screenshot.png)  
+
+![alt text](images/CSS-screenshot.png)  
+   
+
 
 Tools:
 ---  
@@ -90,7 +103,9 @@ Acknowledgements
 #### Images
 * [Tesla Photo](https://upload.wikimedia.org/wikipedia/commons/d/d4/N.Tesla.JPG)
 * [Einstein Photo](https://images.gr-assets.com/authors/1429114964p5/9810.jpg)
-* [Confetti Photo](https://bead109.files.wordpress.com/2017/07/giphy.gif)
+* [Confetti Photo](https://bead109.files.wordpress.com/2017/07/giphy.gif)  
+
+
 
 #### Audio
 * [Applause](http://www.pacdv.com/sounds/people_sounds.html)
