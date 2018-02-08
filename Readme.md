@@ -37,9 +37,9 @@ Tiebreak:
 ----
 Add a tieBreaker function to break the tie.  
 
-#<span style="color:purple">**Logic:**</span>  
+# <span style="color:purple">**Logic:**</span>  
 Notify players that they've tied 
-Display tie breaker instructions with two keyNames for each player
+Display tie breaker instructions with two keyNames for each player  
 Nicola Tesla---> N  
 Albert Einstein---> L  
 Wait 5 seconds then display the tieBreaker question (setTimeout)  
@@ -87,12 +87,12 @@ Future Enhancements:
 
 Acknowledgements
 ---
-###Images
+### Images
 * [Tesla Photo](https://upload.wikimedia.org/wikipedia/commons/d/d4/N.Tesla.JPG)
 * [Einstein Photo](https://images.gr-assets.com/authors/1429114964p5/9810.jpg)
 * [Confetti Photo](https://bead109.files.wordpress.com/2017/07/giphy.gif)
 
-###Audio
+### Audio
 * [Applause](http://www.pacdv.com/sounds/people_sounds.html)
 * [Sad Trombone Photo](https://www.myinstants.com/instant/sad-trombone/)
 
