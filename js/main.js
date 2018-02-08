@@ -259,13 +259,50 @@ function clickedAnswer() {
 
 function setWinnerTo(player) {
   $("#applause")[0].play();
-  $('body').html('');
+  $('header, main').remove();
   $('body').css('background', 'url(images/confetti.gif)');
 
   alert("The winner is " + player.name + "!!!");
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function setupTieBreaker() {
+  //Disable event handler for answer click until L or N is pressed. you can not click answers.
+  $(".answer").off("click");
 
+  document.addEventListener('keypress', keyPressHandler);
+
+  console.log('tie game!')
+  //Remove the existing question.
+  $('.question').empty();
+
+  $('.question').append('<p class="tieGame">whoever clicks their button first, goes first in sudden death</p>')
+  $('.question').append('<div class="playerButton tieGame">Nicola Tesla = L</div>')
+  $('.question').append('<div class="playerButton tieGame">Albert Einstein= N</div>')
+
+  //Wait 5 seconds and display tie breaker question.
+  setTimeout(function () {
+    console.log("Timeout complete, loading tie breaker question.");
+    game.changeQuestionToTieBreaker();
+  }, 5000);
+
+  function keyPressHandler() {
+    const keyName = event.key;
+    if (keyName === "l" || keyName === "n") {
+
+      //Add event listener back to allow clicking the answers.
+      $(".answer").click(clickedAnswer);
+
+      //Ignore keypress as L or N has been properly pressed.
+      document.removeEventListener('keypress', keyPressHandler)
+
+      if (keyName === "l") {
+        //The Game always end with Player 2.  Switch back to Player 1
+        game.switchPlayer();
+      }
+    }
+  }
+}
 
 
 

@@ -24,9 +24,7 @@ header{
     font-family: fantasy;
     text-align:center;
 }
-.hidden{
-    display:none;
-}
+
 /* Style for Players */
 .player-scores {
     color:white;
