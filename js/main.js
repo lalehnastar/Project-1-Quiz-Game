@@ -1,7 +1,4 @@
-// THEEEEEEE PPRRROOOJJJEECCTTT11111111111111111111111
-//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-//readme 
-// Green the right question 
+
 
 var game = {
   players: [{ name: 'Nicola Tesla', score: 0 }, { name: 'Albert Einstein', score: 0 }],
