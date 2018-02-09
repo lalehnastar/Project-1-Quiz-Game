@@ -40,8 +40,8 @@ Add a tieBreaker function to break the tie.
 ## <span style="color:purple">**Logic**</span>  
 Notify players that they've tied 
 Display tie breaker instructions with two keyNames for each player  
-Nicola Tesla---> N  
-Albert Einstein---> L  
+Nicola Tesla---> L  
+Albert Einstein---> N  
 Wait 5 seconds then display the tieBreaker question (setTimeout)  
 Time to press the keys  
 Press first---> answer first  
